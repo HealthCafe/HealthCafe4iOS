@@ -7,6 +7,7 @@ target 'HealthCafe' do
 
 pod 'MagicalRecord'
 pod 'AFNetworking'
+pod 'Firebase'
 
 end
 
