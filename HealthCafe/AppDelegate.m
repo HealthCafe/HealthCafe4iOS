@@ -23,8 +23,8 @@
     
     UINavigationController* navigationController = (id)self.window.rootViewController;
     
-    NSArray<NSString*>* fonts = @[@"fa-bar-chart-o", @"fa-eyedropper"];
-    NSArray<NSString*>* titles = @[@"基本情報", @"血液"];
+    NSArray<NSString*>* fonts = @[@"fa-bar-chart-o", @"fa-eyedropper", @"fa-user"];
+    NSArray<NSString*>* titles = @[@"基本情報", @"血液", @"アドバイス"];
     for (int i = 0; i < fonts.count; i++) {
         navigationController.viewControllers[i].tabBarItem.title = titles[i];
         navigationController.viewControllers[i].tabBarItem.image =
