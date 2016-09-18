@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 @import Firebase;
+@import FontAwesome_swift;
 
 @interface AppDelegate ()
 
@@ -19,6 +20,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [FIRApp configure];
+    
+    UINavigationController* navigationController = (id)self.window.rootViewController;
+    
+    NSArray<NSString*>* fonts = @[@"fa-bar-chart-o", @"fa-eyedropper"];
+    NSArray<NSString*>* titles = @[@"基本情報", @"血液"];
+    for (int i = 0; i < fonts.count; i++) {
+        navigationController.viewControllers[i].tabBarItem.title = titles[i];
+        navigationController.viewControllers[i].tabBarItem.image =
+        [UIImage fontAwesomeIconWithCode:fonts[i] textColor:UIColor.blackColor size:CGSizeMake(30, 30) backgroundColor:UIColor.clearColor];
+    }
+    
     return YES;
 }
 
