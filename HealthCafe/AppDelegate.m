@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 @import Firebase;
-#import "FontAwesomeKit.h"
 @import FontAwesome_swift;
 
 @interface AppDelegate ()
