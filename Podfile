@@ -8,6 +8,7 @@ target 'HealthCafe' do
 pod 'MagicalRecord'
 pod 'AFNetworking'
 pod 'Firebase'
+pod 'FontAwesome'
 
 end
 
