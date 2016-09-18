@@ -7,8 +7,7 @@
 //
 
 #import "BloodTableViewController.h"
-#import <FontAwesome/NSString+FontAwesome.h>
-#import <FontAwesome/UIFont+FontAwesome.h>
+@import FontAwesome;
 
 @interface BloodTableViewController ()
 
@@ -30,6 +29,10 @@
         label.font = [UIFont fontWithName:kFontAwesomeFamilyName size:25];
         label.text = [NSString fontAwesomeIconStringForEnum:FABarChartO];
     }
+    FAImageView *imageView = [[FAImageView alloc] initWithFrame:CGRectMake(0.f, 0.f, 100.f, 100.f)];
+    imageView.image = nil;
+    [imageView setDefaultIconIdentifier:@"eyedropper"];
+    self.tabBarItem.image = imageView.image;
 }
 
 - (void)didReceiveMemoryWarning {
