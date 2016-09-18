@@ -17,6 +17,7 @@
 		F8CADC0D1D8D5ED000395904 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8CADC0C1D8D5ED000395904 /* GoogleService-Info.plist */; };
 		F8CADC191D8E294700395904 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8CADC181D8E1E0900395904 /* FontAwesome.ttf */; };
 		F8CADC1C1D8E2A7C00395904 /* BasicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CADC1B1D8E2A7C00395904 /* BasicTableViewController.m */; };
+		F8CADC1F1D8E35F300395904 /* BloodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CADC1E1D8E35F300395904 /* BloodTableViewController.m */; };
 		FCBFAF15BD53B1CECF408BDF /* libPods-HealthCafe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2036D2CD59EFED5FC02BAB0 /* libPods-HealthCafe.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		F8CADC181D8E1E0900395904 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		F8CADC1A1D8E2A7C00395904 /* BasicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicTableViewController.h; sourceTree = "<group>"; };
 		F8CADC1B1D8E2A7C00395904 /* BasicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicTableViewController.m; sourceTree = "<group>"; };
+		F8CADC1D1D8E35F300395904 /* BloodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodTableViewController.h; sourceTree = "<group>"; };
+		F8CADC1E1D8E35F300395904 /* BloodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				F8CADBE71D8CF3AB00395904 /* Supporting Files */,
 				F8CADC1A1D8E2A7C00395904 /* BasicTableViewController.h */,
 				F8CADC1B1D8E2A7C00395904 /* BasicTableViewController.m */,
+				F8CADC1D1D8E35F300395904 /* BloodTableViewController.h */,
+				F8CADC1E1D8E35F300395904 /* BloodTableViewController.m */,
 			);
 			path = HealthCafe;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8CADBEF1D8CF3AB00395904 /* ViewController.m in Sources */,
+				F8CADC1F1D8E35F300395904 /* BloodTableViewController.m in Sources */,
 				F8CADBEC1D8CF3AB00395904 /* AppDelegate.m in Sources */,
 				F8CADC1C1D8E2A7C00395904 /* BasicTableViewController.m in Sources */,
 				F8CADBE91D8CF3AB00395904 /* main.m in Sources */,
