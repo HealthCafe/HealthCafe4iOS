@@ -10,6 +10,9 @@
 
 @interface AdviceViewController ()
 
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (nonatomic) IBInspectable NSString* html;
+
 @end
 
 @implementation AdviceViewController
@@ -17,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.webView loadHTMLString:self.html baseURL:nil];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -867,9 +867,42 @@
                     <view key="view" contentMode="scaleToFill" id="UId-dZ-n6g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Helth-Cafe_rogo" translatesAutoresizingMaskIntoConstraints="NO" id="olA-LD-TzR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="XY9-oG-7FU"/>
+                                </constraints>
+                            </imageView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdE-wK-2AF">
+                                <rect key="frame" x="0.0" y="220" width="375" height="398"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fdE-wK-2AF" firstAttribute="leading" secondItem="UId-dZ-n6g" secondAttribute="leading" id="5B2-pK-kO7"/>
+                            <constraint firstAttribute="trailing" secondItem="olA-LD-TzR" secondAttribute="trailing" id="Jag-64-7Or"/>
+                            <constraint firstItem="fdE-wK-2AF" firstAttribute="top" secondItem="olA-LD-TzR" secondAttribute="bottom" id="Xfh-hg-FA6"/>
+                            <constraint firstItem="olA-LD-TzR" firstAttribute="top" secondItem="1zO-hl-ovn" secondAttribute="bottom" id="oni-EI-3Bx"/>
+                            <constraint firstItem="4G1-yB-6C8" firstAttribute="top" secondItem="fdE-wK-2AF" secondAttribute="bottom" id="pZd-zL-wab"/>
+                            <constraint firstItem="olA-LD-TzR" firstAttribute="leading" secondItem="UId-dZ-n6g" secondAttribute="leading" id="qXa-eC-tv2"/>
+                            <constraint firstAttribute="trailing" secondItem="fdE-wK-2AF" secondAttribute="trailing" id="qhj-xq-htx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="R6t-0U-a7r"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="html">
+                            <string key="value">&lt;font size=10&gt;
+&lt;p&gt;あなたはビール飲みすぎです休肝日を設けましょう&lt;/p&gt;&lt;p&gt;コレステロールが高いので食事も改善したほうがいいっぽ&lt;/p&gt;
+
+&lt;p&gt;～担当医より～○○してください&lt;/p&gt;
+&lt;/font&gt;</string>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="webView" destination="fdE-wK-2AF" id="VSm-GY-tc1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9R-YA-FnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
